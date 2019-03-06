@@ -1,0 +1,68 @@
+//Fonts
+@import:"https://fonts.googleapis.com/css?  family=Roboto:400,700"
+
+
+// Colours
+$texts: #FFF
+$pink: #FF5873
+$dark: #090F1A
+
+
+
+//Mobile first
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+
+//General HTML tags
+html
+  background-color: $dark
+
+body
+  color: $texts
+  font-family: 'Roboto', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
+
+  
+//Main Flexbox
+.container
+  display: flex
+  -webkit-display: box
+  -moz-display: box
+  -ms-display: flexbox
+  -webkit-display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-content: center
+  padding: 3em 1.5em
+
+  
+//Content
+.content
+  max-width: 500px
+  
+h1
+  font-size: 2.5em 
+  font-weight: 700
+  line-height: 1.3em
+  margin-bottom: 40px
+  
+p
+  font-size: 1.1em
+  font-weight: 400
+  line-height: 1.5em
+  
+  a
+    text-decoration: none
+    color: $pink
+    font-weight: 700
+ 
+//Gradient Hover   
+.highlight:hover
+  background: -webkit-linear-gradient(25deg, #FFB281, #F45580)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
